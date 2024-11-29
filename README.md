@@ -1,3 +1,6 @@
+# This repo isn't working properly right now.
+So I archived it. I will undo that when I feel like working on this again.
+
 # Text Lists for the Internet Storm Center (ISC) API
 > IMPORTANT: This repository and distribution of ISC data is completely unofficial. I am not associated with them in any way.
 
