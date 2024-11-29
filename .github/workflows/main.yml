@@ -1,6 +1,9 @@
 name: Build and Publish every 12 hours
 run-name: Building list files and publish to GitHub Releases
 on:
+  push:
+    branches:
+      - main
   schedule:
     - cron: '0 0,12 * * *'
 jobs:
