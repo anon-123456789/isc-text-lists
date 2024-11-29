@@ -41,6 +41,7 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
           release: "Latest List Files (ignore the date)"
           tag: "initial-commit"
+          updateTag: "false"
           replace: true
           files: >
             cloudcidrs.txt
