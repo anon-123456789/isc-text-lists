@@ -1,5 +1,5 @@
 name: Build and Publish every 12 hours
-run-name: Building list files and publish to GitHub Releases
+run-name: Build list files and publish to GitHub Releases
 on:
   push:
     branches:
