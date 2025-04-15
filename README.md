@@ -1,8 +1,6 @@
-# This repo isn't working properly right now.
-So I archived it. I will undo that when I feel like working on this again.
-
 # Text Lists for the Internet Storm Center (ISC) API
-> IMPORTANT: This repository and distribution of ISC data is completely unofficial. I am not associated with them in any way.
+> [!IMPORTANT]
+> This repository and distribution of ISC data is completely unofficial. I am not associated with them in any way.
 
 # Why does this exist?
 The [Internet Storm Center API](https://isc.sans.edu/api/) has plain text as an output option, but it isn't the right format expected by OPNsense and probably a lot of other firewalls. The scripts in this repository create compatible plain text lists directly from the JSON data (which is easier to parse).
