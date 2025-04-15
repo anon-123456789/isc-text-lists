@@ -36,13 +36,12 @@ jobs:
         with:
           name: lists
       - name: Publish to GitHub Releases
-        uses: IsaacShelton/update-existing-release@v1.3.4
+        id: yet-another-upload-release-asset-action
+        uses: shogo82148/actions-upload-release-asset@v1.8.0
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-          release: "Latest List Files (ignore the date)"
-          tag: "initial-commit"
-          updateTag: "false"
-          replace: true
-          files: >
-            cloudcidrs.txt
-            intelfeed.txt
+          upload_url: "https://uploads.github.com/repos/anon-123456789/isc-text-lists/releases/188228690/assets{?name,label}"
+          asset_path: ./*.txt
+          asset_content_type: text/plain
+          overwrite: true
