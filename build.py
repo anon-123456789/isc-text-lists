@@ -48,7 +48,7 @@ with open(cloudcidrs_filename, "w", encoding="utf-8") as cloudcidrs_file:
     cloudcidrs_file.write(output_file_header + "\n")
     cloudcidrs_file.write("\n".join(cloudcidrs_data))
 
-print(f"Writing intelfeed to {intelfeed_filename}")
+print(f"Writing intelfeed with header to {intelfeed_filename}")
 with open(intelfeed_filename, "w", encoding="utf-8") as intelfeed_file:
     intelfeed_file.write(output_file_header + "\n")
     intelfeed_file.write("\n".join(intelfeed_data))
