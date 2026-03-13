@@ -42,6 +42,8 @@ intelfeed_data = [iterator["ip"] for iterator in intelfeed_json]
 print(f"cloudcidrs: {len(cloudcidrs_data)} CIDRs")
 print(f"intelfeed: {len(intelfeed_data)} IPs")
 
+if len(cloudcidrs_data) == 0:
+    raise Exception("cloudcidrs length is 0!")
 
 print(f"Writing cloudcidrs with header to {cloudcidrs_filename}")
 with open(cloudcidrs_filename, "w", encoding="utf-8") as cloudcidrs_file:
